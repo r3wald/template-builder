@@ -1,0 +1,18 @@
+{
+    "require": {
+        "silex/silex":"1.0.*@dev",
+        "monolog/monolog":"*@stable",
+        "twig/twig":"*@stable"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+
+    "config": {
+        "bin-dir": "bin/"
+    }
+
+}
