@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+/*@import "compass/reset";*/
 
 $seashell: #f1f1f1;
 $black: #000000;
@@ -11,17 +11,3 @@ $Schnellnavigation: #58585A;
 $mid-gray: #717172;
 $french-gray: #B4B4B5;
 $esvrot: #C40125;
-
-/*** Colors ***/
-
-body {
-  width: 1000px;
-  margin: 10px auto;
-  color:
-    lighten($black, 20%);
-}
-
-header {
-  color: $esvrot;
-}
-

@@ -1,13 +1,10 @@
 {% extends "_layout.twig" %}
 
 {% block CONTENT %}
-    <header>
         <h1>Liste der Templates</h1>
         <ul>
             {% for template in templates %}
                 <li><a href="/template/{{ template }}">Template "{{ template }}"</a></li>
             {% endfor %}
         </ul>
-    </header>
-
 {% endblock %}
