@@ -11,3 +11,20 @@ $Schnellnavigation: #58585A;
 $mid-gray: #717172;
 $french-gray: #B4B4B5;
 $esvrot: #C40125;
+
+.navi2 {
+  font-size: 12px;
+}
+.navi2 a:not(:last-child):after {
+  content: '  |  ';
+}
+
+.debug {
+  margin-bottom: 50px;
+  > * {
+    text-align: center;
+  }
+  > *:nth-child(even) {
+    background-color: lightsteelblue;
+  }
+}

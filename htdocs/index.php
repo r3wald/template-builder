@@ -18,11 +18,11 @@ $app->get('/', function () use ($app) {
     $i = new FilesystemIterator(__DIR__ . '/../templates');
     foreach ($i as $f) {
         $t = $f->getFilename();
-        if (!preg_match('#^([^_]\w+)\.twig$#', $t))
+        if (preg_match('#^_#', $t))
             continue;
-        $t = substr($t, 0, -5);
         $templates[] = $t;
     }
+    sort($templates);
     return $app['twig']->render(
         '_index.twig',
         array('templates' => $templates)
@@ -30,7 +30,7 @@ $app->get('/', function () use ($app) {
 });
 
 $app->get('/template/{template}', function ($template) use ($app) {
-    $template = $template . '.twig';
+//    $template = $template . '.twig';
     return $app['twig']->render(
         $template
     );

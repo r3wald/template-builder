@@ -3,3 +3,25 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /*@import "compass/reset";*/
+/* line 15, ../../sass/screen.scss */
+.navi2 {
+  font-size: 12px;
+}
+
+/* line 18, ../../sass/screen.scss */
+.navi2 a:not(:last-child):after {
+  content: '  |  ';
+}
+
+/* line 22, ../../sass/screen.scss */
+.debug {
+  margin-bottom: 50px;
+}
+/* line 24, ../../sass/screen.scss */
+.debug > * {
+  text-align: center;
+}
+/* line 27, ../../sass/screen.scss */
+.debug > *:nth-child(even) {
+  background-color: lightsteelblue;
+}
