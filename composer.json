@@ -4,7 +4,7 @@
         "monolog/monolog":"*@stable",
         "twig/twig":"*@stable"
     },
-
+    "require-dev":{},
     "autoload": {
         "psr-0": {
             "": "src/"
